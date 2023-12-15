@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./conta.css">
+    <script src="./conta.js" defer></script>
+    <title>Count Create</title>
+</head>
+<body>
+   
+    <header>
+        <div class="sombra"></div>
+        <div class="criarConta">
+            <a href="../login/login.html" class=""><img src="../img/Vector.png" alt=""></a>
+        <h3>Criar conta</h3>
+        </div>
+        
+        <div class="person">
+            <div class="photo" id="photo"></div>
+        </div>
+
+        <label class="addImg"> 
+            <img src="./img/Add a photo.png" alt="">
+            <input type="file" class="addImgInput" id="addImg">
+        </label>
+        
+    </header>
+    <main>
+        <div class="preencher">
+
+            <div class="info">
+                <div class="dados"><label>Nome do usuário</label><input type="text" id="nome" required></div>
+                <div class="dados"><label>Endereço de email</label><input type="email" name="email" id="email" required></div>
+                <div class="dados"><label>Senha</label><input type="password" name="password" id="senha" required></div>
+                <div class="dados"><label>Confirmação de senha</label><input type="password" name="password" id="confirma-senha" required></div>
+                <div class="dados"><label>Telefone</label><input type="tel" name="telefone" id="telefone" maxlength="15" required></div>
+            </div>
+            
+            <button  id="criarConta">Criar conta</button>
+            
+        </div>
+
+    </main>
+</body>
+</html>

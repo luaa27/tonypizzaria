@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  header {
+    height: 35vh;
+    width: 100vw;
+    background-image: url(./img/pizza4\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .backPage img {
+    padding: 30px 20px;
+  }
+  
+  main {
+    position: relative;
+    top: -25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: grid;
+    gap: 8px;
+  }
+  
+  h1 {
+    color: rgba(0, 0, 0, 0.56);
+    width: 250px;
+    font-size: 24px;
+  }
+  
+  .titleHeart {
+    display: flex;
+    gap: 25px;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .heart-button {
+    width: 27px;
+    height: 27px;
+    background-color: transparent;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+  
+  .heart-button.active {
+    background-image: url('./img/heart_2.png');
+  }
+  
+  .heart-button:not(.active) {
+    background-image: url('./img/heart_1.png');
+  }
+  
+  h2 {
+    color: #23CB98;
+  }
+  
+  p {
+    font-size: 12px;
+    width: 300px;
+    color: #999999;
+  }
+  
+  .star {
+    display: flex;
+    gap: 1px;
+  }
+  
+  .titleComents {
+    display: flex;
+    margin-top: 23px;
+    gap: 8px;
+    color: rgba(0, 0, 0, 0.622);
+}
+
+.comentarios {
+    margin-top: 10px;
+    overflow: auto;
+    height: 19vh;
+    display: grid;
+    gap: 10px;
+    width: 90vw;
+    scrollbar-width: thin;
+}
+
+.comentarios::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.comentarios::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.container {
+    position: relative;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 110px;
+    width: 96%;
+}
+
+.perfil {
+    width: 10px;
+    color: #AEA6A6;
+    font-size: 15px;
+    display: flex;
+    gap: 5px;
+    height: 5vh;
+    width: 8vw;
+}
+
+span {
+    width: 10px;
+    font-size: 11px;
+}
+
+.nameDat {
+    display: grid;
+    margin-bottom: 5px;
+}
+
+.comentarios h4 {
+    color: #AEA6A6;
+    font-size: 13px;
+}
+
+.container p {
+    font-size: 12px;
+}
+
+.nameDat p {
+    font-size: 13px;
+    width: 35vw;
+}
+
+.star-rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 2px;
+    padding: 12px;
+}
+
+.star-rating img {
+    width: 20px;
+}
